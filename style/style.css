@@ -57,6 +57,11 @@ a {
   color: white;
 }
 
+.link-dark {
+  text-decoration: none;
+  color: #333333;
+}
+
 /* Utility Classes */
 .py-1 {
   padding: 1rem 0;
@@ -120,6 +125,7 @@ a {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: #333333;
 }
 .tech-title,
 .proj-title {
