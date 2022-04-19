@@ -1,0 +1,266 @@
+:root {
+    --clr-primary: #ffc905;
+    --clr-primary-hover: #fac400;
+    --clr-gray100: #f0f7f8;
+    --clr-gray200: #cfd8dc;
+
+    --radius: 0.2rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    margin-top: 10px;
+    border-top: 1px solid rgba(144, 144, 144, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button {
+    font-family: Montserrat;
+    font-weight: 700;
+    border:none;
+    font-size: 1.1rem;
+}
+
+code {
+    background: rgb(243, 243, 243);
+    border-radius: 16px;
+    overflow: auto;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    display: block;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+p {
+    margin: 2.5rem auto;
+}
+
+p:last-of-type {
+    margin-bottom: 5rem;
+}
+
+ul {
+    margin: 0.5rem 0 0.5rem 1.5rem;
+}
+
+ul:first-of-type {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+li {
+    margin-left: 2rem;
+}
+
+input {
+    width: 100%;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+#header {
+    z-index: 1;
+    background: white;
+    top:-7px;
+}
+
+#header.active {
+    transition: 400ms;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+}
+
+#contents {
+    margin: 2rem 0;
+}
+
+.nav-list {
+    background: white;
+    color: black;
+    /* box-shadow: 0px 0px 10px var(--clr-gray200); */
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.black-underline {
+    border-bottom: black solid 4px;
+}
+
+.nav-item:hover {
+    border-bottom: black solid 4px;
+}
+
+/* .btn-primary span:hover {
+    border-bottom: black solid 4px;
+} */
+
+.nav-brand {
+    font-size: 1.5rem;
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.btn-primary {
+    background: var(--clr-primary);
+    text-decoration: none;
+    padding: 1rem;
+    color: black !important;
+}
+
+.btn-primary:hover {
+    background: var(--clr-primary-hover);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.container {
+    margin: 3.5rem auto;
+    padding: 1rem;
+    max-width: 650px;
+}
+
+.heading-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.page-heading {
+    font-size: 2rem;
+}
+
+.post {
+    margin-bottom: 7rem;
+}
+
+.post-title {
+    margin: 1rem 0;
+}
+
+.post-date {
+    color: rgb(121, 121, 121);
+    font-weight: 100;
+}
+
+.post-content {
+    margin: 1rem 0 3rem 0;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color:black;
+}
+
+.post-list-section {
+    margin-bottom: 5rem;
+}
+
+.post-list {
+    list-style-type: circle !important;
+    margin: 1rem 0 3rem 2rem !important;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.post-list li {
+    margin: 1rem 0;
+}
+
+.post-list-item {
+    text-decoration: none;
+    color: rgb(0, 0, 185);
+}
+
+.post-list-item:hover {
+    border-bottom: rgb(0, 0, 124) solid 3px;
+}
+
+.post-image {
+    object-fit: cover;
+    max-width: 650px;
+    height: auto;
+}
+
+.img-section {
+    margin: 3rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+#profile-image-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-image {
+    min-width: 75px;
+    min-height: 75px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-element {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contact-input {
+    width: 100%;
+    height: 30px;
+    border-bottom: #999 1px solid;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    font-family: "Open Sans" !important;
+    font-weight: 400 !important;
+    outline: none;
+    border: none;
+    border-bottom: #999 1px solid;
+}
+
+.contact-element textarea {
+    resize: vertical;
+    height: 300px;
+}
+
+.form-input {
+    width: 100%;
+    height: 50px;
+    border-bottom: #444 solid 2px;
+    margin: 1rem auto;
+    padding: 1rem;
+}

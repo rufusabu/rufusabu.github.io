@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .nav-item {
+        font-size: 0.7rem;
+        margin-right: 1rem;
+    }
+    .nav-brand {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-brand {
+        visibility: hidden;
+    }
+}
